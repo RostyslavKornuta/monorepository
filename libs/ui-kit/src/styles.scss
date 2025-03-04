@@ -1,0 +1,25 @@
+@import "./color";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: $secondary-grey-5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  margin: -64px 20px 0 20px;
+  height: calc(100vh - 120px);
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px 0 #8E93A826;
+}

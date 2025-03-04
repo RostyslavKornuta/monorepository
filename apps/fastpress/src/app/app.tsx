@@ -1,18 +1,17 @@
-import { Button } from '@mui/material';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { Sites } from './modules/sites';
+import { Library } from './modules/library';
 
 export function App() {
   return (
-    <>
-      <Button variant="contained" color="primary" disabled={true}>
-        Label
-      </Button>
-      <Button variant="contained" color="secondary">
-        Label
-      </Button>
-      <Button variant="contained" color="danger">
-        Label
-      </Button>
-    </>
+    <div className='container'>
+      <Routes>
+        <Route path="/" element={<Navigate to="/sites" replace />} />
+
+        <Route path="/sites" element={<Sites />} />
+        <Route path="/library" element={<Library />} />
+      </Routes>
+    </div>
   );
 }
 

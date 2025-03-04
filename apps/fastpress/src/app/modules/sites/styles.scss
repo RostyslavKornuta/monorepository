@@ -1,0 +1,32 @@
+@import "../../../../../../libs/ui-kit/src/color";
+
+.sites {
+
+  &__header {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      color: $secondary-grey-80;
+    }
+  }
+
+  &__actions {
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}
+
